@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Privacy Policy"
+  description="What data SoloStack collects and how it is used."
+>
+  <h1>Privacy Policy</h1>
+  <p><em>Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</em></p>
+  <p>
+    This is a starting template — replace the placeholders below with your actual analytics, email, and
+    hosting providers before publishing, and have it reviewed if you plan to process EU visitor data
+    (GDPR) or collect emails.
+  </p>
+  <h2>Information we collect</h2>
+  <p>
+    We use privacy-respecting analytics (e.g. Plausible or Fathom) to understand which articles are
+    useful, without tracking individuals across the web or storing personal data by default. If you
+    subscribe to our newsletter, we collect your email address via [YOUR EMAIL PROVIDER — e.g. Kit],
+    solely to send you updates you've asked for. You can unsubscribe at any time.
+  </p>
+  <h2>Cookies</h2>
+  <p>
+    Some affiliate links use tracking cookies set by the destination company, not by SoloStack, so that
+    they can credit us for a signup that originated on this site.
+  </p>
+  <h2>Third parties</h2>
+  <p>We do not sell visitor data. Affiliate partners and analytics/email providers are listed above.</p>
+  <h2>Contact</h2>
+  <p><a href="mailto:hello@solostack.io">hello@solostack.io</a></p>
+</BaseLayout>

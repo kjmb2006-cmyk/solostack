@@ -1,0 +1,124 @@
+{
+  "_readme": "Calendrier éditorial SoloStack. 'status' passe de queued -> drafted -> published. L'agent automatisé (voir CLAUDE.md section 3) traite les sujets 'queued' dans l'ordre de targetDate.",
+  "topics": [
+    {
+      "slug": "zapier-vs-make-solo-consultants",
+      "title": "Zapier vs Make in 2026: Which Automation Tool Should Solo Consultants Choose?",
+      "category": "comparisons",
+      "targetDate": "2026-09-01",
+      "status": "published"
+    },
+    {
+      "slug": "ai-stack-solo-consultants",
+      "title": "The Solo Consultant's AI Stack: 9 Tools That Actually Save You Time in 2026",
+      "category": "tool-lists",
+      "targetDate": "2026-09-04",
+      "status": "published"
+    },
+    {
+      "slug": "automate-client-onboarding-make",
+      "title": "How to Automate Client Onboarding as a Solo Consultant (Step-by-Step with Make)",
+      "category": "tutorials",
+      "targetDate": "2026-09-08",
+      "status": "published"
+    },
+    {
+      "slug": "clickup-vs-notion-solo-consultants",
+      "title": "ClickUp vs Notion for Solo Consultants: Which Should You Actually Use in 2026?",
+      "category": "comparisons",
+      "targetDate": "2026-09-11",
+      "status": "published"
+    },
+    {
+      "slug": "best-email-newsletter-tools-consultants",
+      "title": "Best Email Newsletter Tools for Consultants Who Want to Build an Audience",
+      "category": "tool-lists",
+      "targetDate": "2026-09-13",
+      "status": "published"
+    },
+    {
+      "slug": "best-crm-solo-consultants",
+      "title": "Best CRM for Solo Consultants in 2026 (You Might Not Need One)",
+      "category": "comparisons",
+      "targetDate": "2026-09-21",
+      "status": "queued"
+    },
+    {
+      "slug": "notion-ai-vs-chatgpt-consulting-deliverables",
+      "title": "Notion AI vs ChatGPT for Consulting Deliverables: What's Actually Worth Paying For",
+      "category": "comparisons",
+      "targetDate": "2026-09-28",
+      "status": "queued"
+    },
+    {
+      "slug": "build-client-portal-without-developer",
+      "title": "How to Build a Client Portal Without Hiring a Developer",
+      "category": "tutorials",
+      "targetDate": "2026-10-05",
+      "status": "queued"
+    },
+    {
+      "slug": "calendly-vs-reclaim-ai-scheduling",
+      "title": "Calendly vs Reclaim.ai: Scheduling Tools for People Who Hate Scheduling",
+      "category": "comparisons",
+      "targetDate": "2026-10-12",
+      "status": "queued"
+    },
+    {
+      "slug": "starter-stack-new-consulting-practice",
+      "title": "The 5-Tool Starter Stack for a Brand-New Consulting Practice (Under $50/Month)",
+      "category": "tool-lists",
+      "targetDate": "2026-10-19",
+      "status": "queued"
+    },
+    {
+      "slug": "automate-invoice-follow-ups",
+      "title": "How to Automate Invoice Follow-Ups Without Sounding Like a Robot",
+      "category": "tutorials",
+      "targetDate": "2026-10-26",
+      "status": "queued"
+    },
+    {
+      "slug": "semrush-vs-ahrefs-consultants",
+      "title": "Semrush vs Ahrefs for Consultants Who Want More Inbound Leads",
+      "category": "comparisons",
+      "targetDate": "2026-11-02",
+      "status": "queued"
+    },
+    {
+      "slug": "ai-meeting-notetakers-compared",
+      "title": "AI Meeting Note-Takers Compared: Otter.ai vs Fireflies vs Notion AI Meeting Notes",
+      "category": "comparisons",
+      "targetDate": "2026-11-09",
+      "status": "queued"
+    },
+    {
+      "slug": "price-consulting-services-spreadsheet",
+      "title": "How to Price Your Consulting Services Using a Simple Spreadsheet (Template Included)",
+      "category": "tutorials",
+      "targetDate": "2026-11-16",
+      "status": "queued"
+    },
+    {
+      "slug": "best-proposal-contract-tools-consultants",
+      "title": "Best Proposal and Contract Tools for Solo Consultants (PandaDoc vs Alternatives)",
+      "category": "comparisons",
+      "targetDate": "2026-11-23",
+      "status": "queued"
+    },
+    {
+      "slug": "referral-system-zapier",
+      "title": "Building a Referral System for Your Consulting Practice with Zapier",
+      "category": "tutorials",
+      "targetDate": "2026-11-30",
+      "status": "queued"
+    },
+    {
+      "slug": "grammarly-vs-writesonic-consultants",
+      "title": "Grammarly vs Writesonic: Which AI Writing Tool Do Consultants Actually Need",
+      "category": "comparisons",
+      "targetDate": "2026-12-07",
+      "status": "queued"
+    }
+  ]
+}

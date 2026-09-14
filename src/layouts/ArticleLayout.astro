@@ -1,0 +1,27 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+}
+const { title, description, pubDate, updatedDate } = Astro.props;
+
+const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+<BaseLayout title={title} description={description} article={true}>
+  <article>
+    <h1>{title}</h1>
+    <p class="meta">
+      Published {fmt(pubDate)}{updatedDate && <> · Updated {fmt(updatedDate)}</>} · SoloStack Editorial Team
+    </p>
+    <p class="disclosure">
+      Some links on this page are affiliate links. If you sign up through them, SoloStack may earn a commission
+      at no extra cost to you. We only recommend tools we've researched and believe are genuinely useful — see
+      our <a href="/affiliate-disclosure">full disclosure</a>.
+    </p>
+    <slot />
+  </article>
+</BaseLayout>

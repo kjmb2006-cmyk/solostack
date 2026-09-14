@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<BaseLayout
+  title="AI & Automation Tools for Solo Consultants"
+  description="SoloStack tests and compares the AI, automation, and productivity tools independent consultants and lean service businesses actually need — no fluff, no sponsored hype."
+>
+  <section class="hero">
+    <h1>The software stack for people who run their business alone.</h1>
+    <p class="lede">
+      We research, test, and compare the AI and automation tools that help solo consultants and small
+      service businesses save time, look professional, and grow without hiring — so you don't have to
+      spend your Saturday reading changelogs.
+    </p>
+  </section>
+
+  <section>
+    <h2>Latest articles</h2>
+    {posts.map((post) => (
+      <div class="post-list-item">
+        <h2><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
+        <p class="meta">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+        <p>{post.data.description}</p>
+        <p>{post.data.tags.map((t: string) => <span class="tag-pill">{t}</span>)}</p>
+      </div>
+    ))}
+  </section>
+</BaseLayout>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solostack.afriklearn-consulting.com/sitemap.xml

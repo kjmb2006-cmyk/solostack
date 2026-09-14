@@ -1,0 +1,16 @@
+---
+interface Props {
+  tool: string;
+  href: string;
+  label?: string;
+}
+const { tool, href, label } = Astro.props;
+---
+<div class="cta-box">
+  <strong>Try {tool}</strong>
+  <p style="margin:6px 0 0;">
+    <a class="button" href={href} rel="sponsored noopener" target="_blank">
+      {label ?? `Visit ${tool} →`}
+    </a>
+  </p>
+</div>

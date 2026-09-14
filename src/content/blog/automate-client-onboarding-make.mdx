@@ -1,0 +1,70 @@
+---
+title: "How to Automate Client Onboarding as a Solo Consultant (Step-by-Step with Make)"
+description: "A complete, copyable workflow for automating consulting client onboarding — contract signed to kickoff call booked — using Make, with no code required."
+pubDate: 2026-09-08
+category: tutorials
+tags: ["automation", "make", "client-onboarding", "tutorial"]
+draft: false
+---
+
+import CTA from '../../components/CTA.astro';
+
+Client onboarding is the highest-leverage thing to automate first: it happens every single time you win work, it's mostly repetitive, and getting it wrong (a slow or sloppy first week) damages the relationship before it's even started. Here's a workflow you can build in under an hour.
+
+## What we're building
+
+**Trigger:** A client signs a proposal or contract (e.g., via PandaDoc, DocuSign, or a simple typeform-based agreement).
+
+**Then, automatically:**
+1. Create a project/folder in your project management tool.
+2. Add the client to your CRM or client database.
+3. Send a branded welcome email with next steps.
+4. Create a shared folder for deliverables.
+5. Send you (the consultant) an internal task to prep for kickoff.
+6. If the client hasn't booked a kickoff call within 48 hours, send a gentle reminder.
+
+Step 6 is the part most tutorials skip — and it's exactly the kind of conditional, wait-then-check logic that makes Make a better fit than a simpler linear tool for this workflow.
+
+<CTA tool="Make" href="https://www.make.com/en/register?pc=YOUR_AFFILIATE_ID" label="Build this in Make's free plan →" />
+
+## Step 1: Set your trigger module
+
+In Make, create a new scenario and choose your e-signature or form tool as the first module (for example, "Watch Documents" in the PandaDoc app, or "Watch Responses" if you're using a form). Filter it so the scenario only fires when a document status equals **completed** — otherwise you'll trigger onboarding on documents that were merely sent, not signed.
+
+## Step 2: Create the project
+
+Add a module for your project management tool (ClickUp, Notion, Asana — whichever you use). Map the client's name and the signed date from Step 1 into the new project's title and start date. If you use a standard project template, most tools let you duplicate a template folder via API — search your PM tool's module list in Make for "duplicate" or "copy" actions.
+
+## Step 3: Add the client to your CRM or database
+
+Even a Notion or Airtable database works as a lightweight CRM at solo-consultant scale. Map: client name, company, contract value, start date, and a status field set to "Onboarding."
+
+## Step 4: Send the welcome email
+
+Use an Email or Gmail module (or your email marketing tool if you want it trackable) to send a templated welcome message. Include: what happens next, how to book the kickoff call (a direct scheduling link), and who to contact with questions. Personalize at minimum the client's name and project name using the data from Step 1.
+
+## Step 5: Create your internal prep task
+
+Add a module to your task tool that creates a task assigned to you: "Prep kickoff notes for [Client Name]," due one day before the earliest likely kickoff date. This is the step people skip and then scramble the morning of the call.
+
+## Step 6: The 48-hour conditional reminder
+
+This is where Make's branching logic matters. Add a **Sleep** module (or a scheduled re-check) for 48 hours, followed by a **Router** that checks whether a kickoff call now exists on your calendar for that client (via a Calendar search module filtered by attendee email). If no matching event is found, send a friendly reminder email. If one exists, end the branch — nothing happens, which is the correct outcome.
+
+## Testing before you trust it
+
+Run the scenario manually against a real (or dummy) signed document before turning on the trigger. Check every mapped field — a wrong field mapping here means every future client's welcome email arrives with someone else's name in it, silently, until a client mentions it.
+
+<CTA tool="Make" href="https://www.make.com/en/register?pc=YOUR_AFFILIATE_ID" label="Start building for free →" />
+
+## What this buys you
+
+At even 2–3 new clients a month, this removes roughly 30–45 minutes of manual, error-prone admin per client, and — more importantly — it means every client gets the same quality of first impression whether you're having a calm week or a chaotic one. That consistency is worth more than the time saved.
+
+## FAQ
+
+**Can I build this exact workflow in Zapier instead?**
+Mostly, yes — steps 1–5 translate directly. Step 6 (wait, then conditionally act) is possible on Zapier but typically needs a paid Delay step plus a separate Zap with a filter, making it more expensive and slightly more fragile than doing it natively in one Make scenario.
+
+**What if I don't use e-signature software yet?**
+A simple form (client confirms they accept the proposal terms) works as the trigger just as well — the rest of the workflow is identical.
