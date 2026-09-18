@@ -32,6 +32,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:description" content={description} />
 
     <link rel="alternate" type="application/rss+xml" title="SoloStack" href="/rss.xml" />
+    <Analytics />
   </head>
   <body>
     <Header />
@@ -39,6 +40,5 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <slot />
     </main>
     <Footer />
-    <Analytics />
   </body>
 </html>
