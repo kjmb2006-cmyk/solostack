@@ -11,8 +11,9 @@
     "new-post": "node scripts/new-post.mjs"
   },
   "dependencies": {
-    "astro": "^4.16.0",
     "@astrojs/mdx": "^3.1.0",
-    "@astrojs/rss": "^4.0.0"
+    "@astrojs/rss": "^4.0.0",
+    "@astrojs/vercel": "^7.8.1",
+    "astro": "^4.16.0"
   }
 }
