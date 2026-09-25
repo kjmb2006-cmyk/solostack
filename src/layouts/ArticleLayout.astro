@@ -1,17 +1,33 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import StructuredData from '../components/StructuredData.astro';
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
 
 interface Props {
   title: string;
   description: string;
   pubDate: Date;
   updatedDate?: Date;
+  faq?: FaqItem[];
 }
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, faq } = Astro.props;
 
 const fmt = (d: Date) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 <BaseLayout title={title} description={description} article={true}>
+  <StructuredData
+    title={title}
+    description={description}
+    pubDate={pubDate}
+    updatedDate={updatedDate}
+    url={canonicalURL.toString()}
+    faq={faq}
+  />
   <article>
     <h1>{title}</h1>
     <p class="meta">
