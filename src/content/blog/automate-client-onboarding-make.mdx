@@ -5,6 +5,11 @@ pubDate: 2026-09-08
 category: tutorials
 tags: ["automation", "make", "client-onboarding", "tutorial"]
 draft: false
+faq:
+  - question: "Can I build this exact workflow in Zapier instead?"
+    answer: "Mostly, yes — steps 1–5 translate directly. Step 6 (wait, then conditionally act) is possible on Zapier but typically needs a paid Delay step plus a separate Zap with a filter, making it more expensive and slightly more fragile than doing it natively in one Make scenario."
+  - question: "What if I don't use e-signature software yet?"
+    answer: "A simple form (client confirms they accept the proposal terms) works as the trigger just as well — the rest of the workflow is identical."
 ---
 
 import CTA from '../../components/CTA.astro';
@@ -59,7 +64,7 @@ Run the scenario manually against a real (or dummy) signed document before turni
 
 ## What this buys you
 
-At even 2–3 new clients a month, this removes roughly 30–45 minutes of manual, error-prone admin per client, and — more importantly — it means every client gets the same quality of first impression whether you're having a calm week or a chaotic one. That consistency is worth more than the time saved.
+At even 2–3 new clients a month, this removes roughly 30–45 minutes of manual, error-prone admin per client, and — more importantly — it means every client gets the same quality of first impression whether you're having a calm week or a chaotic one. That consistency is worth more than the time saved. Make is just one piece of the stack — see [The Solo Consultant's AI Stack](/blog/ai-stack-solo-consultants/) for the other 8 tools worth knowing about, or [Zapier vs Make](/blog/zapier-vs-make-solo-consultants/) if you're still deciding between the two.
 
 ## FAQ
 
