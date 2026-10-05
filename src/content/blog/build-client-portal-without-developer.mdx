@@ -1,9 +1,9 @@
 ---
 title: "How to Build a Client Portal Without Hiring a Developer"
-description: "A step-by-step guide to building a professional client portal with Notion, SuiteDash, Dubsado, HoneyBook, or Softr — no coding or developer budget needed."
+description: "Compare Notion, Dubsado, HoneyBook, and SuiteDash for building a no-code client portal, with verified 2026 pricing and honest trade-offs for solo consultants."
 pubDate: 2026-10-05
 category: tutorials
-tags: ["client portal", "Notion", "SuiteDash", "Dubsado", "HoneyBook", "Softr", "no-code", "solo consultants"]
+tags: ["client portal", "Notion", "Dubsado", "HoneyBook", "SuiteDash", "no-code", "solo consultants"]
 draft: false
 ---
 
@@ -11,86 +11,71 @@ import CTA from '../../components/CTA.astro';
 
 # How to Build a Client Portal Without Hiring a Developer
 
-If you've ever emailed a client a PDF, then re-sent it three days later because they "couldn't find it," then watched that same file land in a fourth email thread with a slightly different file name — you already know why a client portal matters. It's not about looking fancy. It's about not losing a week of your life to "can you resend that?"
+At some point in every solo consulting practice, the email thread becomes the problem. A client asks for "that deliverable from two weeks ago," you scroll back through forty messages, find a Google Drive link that's since been moved, and resend it with an apology. Multiply that by five active clients and you're spending real hours a week just playing file-retrieval system instead of doing the work you're paid for.
 
-The problem is that "client portal" sounds like a custom-built web app with a login screen, which sounds like a $5,000 invoice from a developer you don't have. It isn't, anymore. You can put together something that feels dedicated, branded, and professional using tools built for exactly this, and most of them are priced for a one-person shop. This guide walks through three realistic paths, what they cost right now, and what you give up at each price point.
+A client portal fixes this: one link, one login, everything in one place — deliverables, invoices, contracts, and a place to leave feedback. The problem is that "client portal" sounds like a software project. It isn't, not anymore. You don't need to hire a developer or learn to code. You need to pick the right tool for how much structure you actually want, and set it up in an afternoon.
 
-## What a solo consultant's client portal actually needs to do
+This guide walks through three ways to do that — repurposing a tool you probably already pay for, moving into an all-in-one client management platform, or using dedicated white-label portal software — with real pricing and the honest limitations of each.
 
-Before picking a tool, it helps to be honest about the job. For a 1-5 person consulting practice, a client portal almost never needs to be a custom application. It needs to:
+## What a client portal actually needs to do
 
-Give each client one link they can bookmark and come back to. Show them the status of their project, deliverables, and invoices without them emailing you to ask. Let you upload a file once instead of attaching it to six different threads. Keep each client's view separate from every other client's view, so nobody sees someone else's contract by accident.
+Before comparing tools, it's worth being specific about the bar. A working portal for a solo practice needs to let each client log in (or use a private link) and see only their own files and updates, not anyone else's; hold deliverables, contracts, and invoices in one place instead of scattered across email and cloud storage; look enough like your brand that it doesn't feel like you bolted together three free tools; and take less than a weekend to set up, because you don't have a dev team and you don't want this to become a side project.
 
-That's it. Everything past that — custom workflows, client-facing dashboards with charts, e-signature chains — is a nice-to-have, not a requirement for most solo practices in year one.
+Everything below is evaluated against that bar, not against what a venture-backed agency with an IT department would build.
 
-## The three realistic paths
+## Option 1: Repurpose a tool you already have (Notion)
 
-| Approach | Example tool | Starting price | Best for | Setup time |
-|---|---|---|---|---|
-| Repurpose a tool you already pay for | Notion | $10/user/month (Plus, billed annually) | Consultants who already live in Notion and have 1-10 active clients | 1-2 hours |
-| Dedicated client-portal/CRM platform | SuiteDash, Dubsado, HoneyBook | $19-$36/month | Service businesses that also want invoicing, contracts, and proposals in one place | Half a day to a full day |
-| No-code app builder | Softr (on top of Airtable) | $49/month + Airtable costs | Consultants with specific logic needs (multiple service types, custom client statuses, internal tools too) | 1-2 days |
+If you're already running your practice on Notion, the cheapest path to a client portal is building it there instead of adding new software. You create a parent page per client, share it as a guest-accessible page, and nest sub-pages for deliverables, meeting notes, and a simple invoice tracker. Notion's database views can double as a lightweight project tracker the client can see in real time.
 
-Each of these is a legitimate answer. Which one is right depends mostly on whether you already have client management happening somewhere else, or whether the portal is also meant to replace your CRM and invoicing.
+Pricing, verified against Notion's current pricing page: the Free plan allows up to 10 guests, which is enough for a handful of early clients. The Plus plan is $10 per member per month (billed monthly; cheaper billed annually) and removes the guest cap along with adding custom forms without Notion branding. The Business plan, at $20 per member per month, adds granular permissions so you can control exactly which rows of a database a guest can see — useful once you have multiple active clients and don't want to rebuild a workspace from scratch for each one.
 
-## Path 1: The fastest option — turn Notion into a portal
+The honest limitation: guest access in Notion is link- and page-based, not a true multi-tenant client portal with its own login screen. Clients access pages via an invite or link, which is fine for most engagements but not something you'd want for anything involving highly sensitive financial or legal documents — there's no dedicated client-facing dashboard, no built-in e-signature, and no native invoicing. You're assembling a portal out of parts, and it looks like what it is if you don't put real effort into formatting.
 
-If you're not managing more than a handful of active clients and you already use Notion for your own notes, this is the cheapest and fastest path. It will not look like a polished SaaS product, but it will look organized, and "organized" is most of what clients are actually judging you on.
+<CTA tool="Notion" href="https://www.notion.com/?ref=YOUR_AFFILIATE_ID" label="Try Notion Free" />
 
-**How to set it up:**
+## Option 2: All-in-one client management platforms (Dubsado and HoneyBook)
 
-1. Build one master template page with the sections every client needs: a welcome note, a project timeline or status tracker (a simple database works fine), a "Files" database for deliverables, and an "Invoices" or "Payments" section linking out to your actual invoicing tool.
-2. Duplicate that template for each new client rather than rebuilding it from scratch every time.
-3. Share the page with the client as a guest, not a member — this keeps your workspace's internal pages private while giving them just their folder.
-4. Use a Notion form (built into Plus and above) for client intake so new requests land directly in your database instead of your inbox.
-5. Set a custom subdomain if you're on a paid plan, so the link at least reads as yours rather than a generic notion.site address.
+If you're also looking to replace scattered invoicing, contracts, and scheduling — not just file sharing — a dedicated client management platform does more in one place. Dubsado and HoneyBook are the two most established options for service-based solo businesses, and both bundle a client portal into every plan rather than gating it behind a top tier.
 
-**What you're giving up:** Notion was not built to be a client portal — it's a workspace tool you're repurposing. There's no real "client login" with its own password; access is link- and guest-based, which is fine for most solo practices but not something you'd want for anything involving highly sensitive financial or legal documents. You also don't get built-in invoicing, e-signatures, or payment collection — you'll still need a separate tool for those.
+**Dubsado**, verified from its current pricing page, runs on annual billing: the Starter plan is $335/year (about $27.92/month) and includes unlimited projects and clients, invoicing, payment plans, and client portals. The Premier plan is $525/year (about $43.75/month) and adds unlimited lead capture forms, bookkeeping integration, and automated workflows. Three users are included free; adding more runs $25–$60/month depending on how many you need.
 
-<CTA tool="Notion" href="https://www.notion.com/?ref=YOUR_AFFILIATE_ID" label="Try Notion Plus for client portals" />
+**HoneyBook** is priced per month and is more transparent about month-to-month vs. annual rates: Starter is $29/month either way, Essentials is $49/month billed annually ($59/month billed monthly) and adds scheduling, automations, and the ability to remove HoneyBook's branding from client-facing pages, and Premium is $109/month billed annually ($129/month billed monthly) and removes the team-member cap entirely.
 
-## Path 2: A dedicated client-portal platform
+The trade-off with both: you're moving your invoicing, contracts, and scheduling into a new system, not just adding a portal on top of what you have. That's a real migration, and it only pays off if you intend to actually use the CRM and workflow features — if all you want is a place for clients to grab files, this is more tool than you need. Dubsado's interface also has a steeper learning curve than HoneyBook's; expect to spend a weekend in the workflow builder before it feels natural.
 
-If you want the portal to double as your CRM, invoicing, and contract system, a purpose-built platform saves you from duct-taping three tools together. The three most common options for solo consultants, and what they actually cost right now:
+<CTA tool="Dubsado" href="https://www.dubsado.com/?ref=YOUR_AFFILIATE_ID" label="Start Dubsado Free Trial" />
 
-**SuiteDash** — Start plan is $19/month ($180/year), and unusually for this price point it includes unlimited client portals and white-labeling from day one, plus a custom-brandable mobile app. The trade-off is the interface: SuiteDash packs in a lot of functionality (LMS, proposals, automation, help desk) and the learning curve is noticeably steeper than Notion or HoneyBook — expect to spend real time in their setup wizard before it feels usable.
+<CTA tool="HoneyBook" href="https://www.honeybook.com/?ref=YOUR_AFFILIATE_ID" label="Try HoneyBook" />
 
-<CTA tool="SuiteDash" href="https://suitedash.com/?ref=YOUR_AFFILIATE_ID" label="See SuiteDash plans" />
+## Option 3: Dedicated white-label portal software (SuiteDash)
 
-**Dubsado** — Starter is $35/month ($335/year) and covers unlimited clients and projects, contracts, invoices, and a client portal with up to 3 user seats. The catch: Dubsado's workflow automation ("Flows") — the feature that actually saves you time on onboarding sequences — is locked behind the $55/month Premier plan. On Starter, you're running the portal manually.
+If the portal itself — not invoicing or scheduling — is the main thing you need, and you want it to feel fully branded as yours rather than "powered by" a third party, SuiteDash is built specifically around that. Every plan includes unlimited client portals and what SuiteDash calls "extreme white-labeling," meaning your clients see your logo, your domain, and your own branded mobile app rather than SuiteDash's.
 
-<CTA tool="Dubsado" href="https://www.dubsado.com/?ref=YOUR_AFFILIATE_ID" label="Compare Dubsado plans" />
+Verified current pricing: the START plan is $19/month ($180/year) and includes unlimited CRM contacts, unlimited staff, unlimited portals, and 100GB of storage. THRIVE, at $49/month ($480/year), adds dynamic proposals, a live chat widget for clients, and 500GB of storage. PINNACLE, at $99/month ($960/year), adds a full automation toolkit, a built-in learning management system, and 2TB of storage.
 
-**HoneyBook** — Starter is $29/month if billed annually ($348/year), $36/month if paid monthly, and includes a client portal, proposals, contracts, invoicing, and e-signatures out of the box. The limitation is on the team side, not the client side: Starter supports no additional team members at all, and even the mid-tier Essentials plan caps you at two.
+The catch is that SuiteDash's flexibility comes with real setup overhead — it has more configuration screens than Dubsado or HoneyBook, and most reviewers describe a genuine learning curve before the portal looks the way you want it to. Budget more than an afternoon here; a half-day to a full day is more realistic if you want it polished rather than functional-but-generic.
 
-<CTA tool="HoneyBook" href="https://www.honeybook.com/?ref=YOUR_AFFILIATE_ID" label="Explore HoneyBook for solo consultants" />
+<CTA tool="SuiteDash" href="https://suitedash.com/?ref=YOUR_AFFILIATE_ID" label="Explore SuiteDash Plans" />
 
-**Setup, roughly the same across all three:** connect your payment processor (Stripe is standard), build one onboarding workflow template, set your branding (logo, colors, and in SuiteDash's case a custom domain), and create your first client project from the template. Budget half a day if you're reasonably comfortable with software, a full day if this is your first CRM-style tool.
+## Comparing the options
 
-## Path 3: When you need something more custom — Softr
-
-Softr sits in a different category: it's a no-code app builder, not a client-portal product out of the box. You connect it to a database — usually Airtable — and build the portal's pages, login system, and per-client permissions yourself using pre-made blocks. This is the right call if your business logic doesn't fit neatly into what SuiteDash or Dubsado assume (for example, different client types with genuinely different portal views, or you want the same login system powering both a client portal and an internal tool).
-
-Pricing starts at $49/month (Basic) for up to 20 app users, but there's a real catch for solo consultants: branding removal — getting rid of the "Powered by Softr" badge — requires the $139/month Professional plan at minimum. And Softr is a front end, not a database, so you're also paying for Airtable (or another supported backend) separately.
-
-**How to set it up:** build your client and project tables in Airtable first, with a field that ties each record to a specific client's login email. Connect that base to Softr. Use Softr's "User Groups" feature to restrict each client's login to only the records that match their email — this is the step people skip and then wonder why every client can see every other client's data. Build out pages for project status, files, and messages using Softr's block library. Publish and test the permission boundaries yourself, logged in as a fake "client," before sending real invites.
-
-<CTA tool="Softr" href="https://www.softr.io/?ref=YOUR_AFFILIATE_ID" label="Build a custom portal with Softr" />
-
-## Which one should you actually pick?
-
-If you're not sure yet whether you'll keep more than a few clients, start with Notion — it's the lowest-commitment option and you can migrate later without having wasted much money. If invoicing and contracts are currently a mess and the portal is really a symptom of a bigger "I need a real CRM" problem, go straight to HoneyBook or Dubsado. If you've already tried a few of these and kept hitting a wall where "the tool just doesn't do what I need," Softr is the escape hatch — but budget real setup time and a second subscription for the database.
+| Tool | Starting price (verified) | Best for | Biggest limitation |
+|---|---|---|---|
+| Notion | Free (10 guests) / $10 per member/month (Plus) | Consultants already living in Notion who want the cheapest path | Link-based guest access, not a true branded client login |
+| Dubsado | $335/year (~$27.92/month), Starter | Replacing invoicing + contracts + portal in one annual-billed tool | Steeper learning curve; annual billing only shown on official pricing |
+| HoneyBook | $29/month, Starter | Consultants who want month-to-month flexibility and a gentler learning curve | Branding removal and automations are locked behind the $49+/month Essentials tier |
+| SuiteDash | $19/month, START | Fully white-labeled, branded-as-yours client portals | Most configuration-heavy option; real setup time investment |
 
 ## FAQ
 
-**Do I need a custom domain for my client portal?**
-No, but it helps with perceived professionalism. SuiteDash supports custom domains on all plans; HoneyBook and Dubsado primarily use their own branded URLs with your logo on top; Notion supports a custom domain on paid plans. None of this is a dealbreaker if you skip it.
+**Do I need a custom domain for a client portal to look professional?**
+It helps but isn't strictly required. HoneyBook and Dubsado portals work fine on their default URLs for most solo practices. SuiteDash is the option built around making the portal and even a companion mobile app feel fully yours, including domain mapping, if that matters for how you position your practice.
 
-**Is Notion actually secure enough for sensitive client files?**
-For typical consulting deliverables (reports, slide decks, project trackers), yes — guest access is scoped to the specific page you share. For anything involving signed legal contracts, financial account details, or data under a strict compliance requirement, use a tool built around that, or at minimum keep those documents in a dedicated e-signature/contract tool rather than a shared Notion page.
+**Is a Notion-based portal secure enough for sensitive client documents?**
+For typical consulting deliverables — reports, slide decks, meeting notes — yes. For anything involving signed legal documents, financial statements, or data under a strict NDA, a dedicated portal tool with proper access controls and audit trails (SuiteDash, Dubsado, or HoneyBook) is the safer choice, since Notion's guest sharing is based on links and page invites rather than a locked-down client account system.
 
-**How long does this realistically take to set up?**
-A bare-bones Notion portal: an afternoon. A SuiteDash, Dubsado, or HoneyBook portal with your first client workflow built: one full day, assuming you're not also redesigning your entire onboarding process at the same time. Softr plus Airtable: plan for a weekend, especially the first time you build the permission logic.
+**Can I switch tools later without losing my client history?**
+Generally yes, but plan for manual work, not a one-click export. Files can be downloaded and re-uploaded elsewhere, but workflow automations, proposal templates, and payment history are usually tied to the platform and won't transfer cleanly. It's worth picking based on where you expect to be in a year, not just what's cheapest to start.
 
-**What if I only have one or two clients right now?**
-Don't over-build. A portal pays for itself in time saved once you're juggling enough clients that "where's that file?" emails start eating into your week. Below that, a well-organized shared folder and a consistent naming convention will get you just as far for free.
+**How long does it actually take to set up a basic client portal?**
+A Notion-based portal can be functional in an afternoon if you're already comfortable with Notion. HoneyBook and Dubsado both advertise same-day setup for a basic portal, though building out full workflows takes longer. SuiteDash is the most capable but also the one most likely to eat a full day if you want it to look genuinely polished rather than default.
